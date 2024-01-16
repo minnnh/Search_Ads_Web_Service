@@ -1,6 +1,8 @@
 # Search Ads Web Service
 The Search Ads Web Service project is a Java-based web application with a robust web crawler for gathering product data from Amazon. It enhances online shopping through advanced search capabilities, including query understanding and ads optimization based on user behavior. The goal is to provide users with a straightforward and personalized shopping experience.
 ## Demo
+![img](./img/show.gif)
+
 ## Environment
 - Java 8
 - Maven 3
