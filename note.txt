@@ -1,15 +1,34 @@
-memcachedPortal
-11212
+memcachedPortal: 11212
+synonymsMemcachedPortal: 11219
+featureMemcachedPortal: 11218
+tfMemcachedPortal: 11220
+dfMemcachedPortal: 11221
 
-synonymsMemcachedPortal
-11219
+MySql
+Username: root
+password:
+Db name: searchads
 
+Start mysql:
+brew services start mysql
+brew services restart mysql
+SHOW VARIABLES LIKE 'max_connections';
+SET GLOBAL max_connections = 2000;
 
-featureMemcachedPortal
-11218
+mysql -u root -p\h
+use your_database;
+Show tables;
+Select * from your_table;
+DELETE FROM campaign;
+brew services stop mysql
 
-tfMemcachedPortal
-11220
+brew services start memcached
+brew services stop memcached
+telnet 127.0.0.1 11212
+telnet 127.0.0.1 11219
 
-dfMemcachedPortal
-11221
+memcached -p 11218 -d
+telnet 127.0.0.1 11218 
+spark-shell
+pyspark
+spark-submit
