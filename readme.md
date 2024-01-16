@@ -1,7 +1,7 @@
 # Search Ads Web Service
 The Search Ads Web Service project is a Java-based web application with a robust web crawler for gathering product data from Amazon. It enhances online shopping through advanced search capabilities, including query understanding and ads optimization based on user behavior. The goal is to provide users with a straightforward and personalized shopping experience.
 ## Demo
-Environment
+## Environment
 - Java 8
 - Maven 3
 - Jetty 9
@@ -15,7 +15,7 @@ __Ads Server__: Java, Jetty
 __Data__: MySQL, Memcached
 
 ## How it works
-### Crawler
+### [Crawler](./WebCrawler)
 - Parse HTML Page asynchronously
 1. start with feeds file
 2. a list of website url
@@ -27,7 +27,7 @@ __Data__: MySQL, Memcached
     - store response
     - extract data from HTML
 
-### Modeling
+### [Modeling](./Python)
 - Query Understanding
     - Lucean to clean the text
     - word2vec to find K nearest neighbors of original query, semantically similar queries
@@ -58,7 +58,7 @@ __Data__: MySQL, Memcached
         = (next quality score/current quality score) * next bid price + 0.01
         = next rank score / current quality score + 0.01
 
-### Ads Server
+### [Ads Server](./AdsServer)
 - SearchAd.doGet 
 - adsEngine.selectAds
 
@@ -154,7 +154,7 @@ mvn clean install
     - [x] synonym
     - [x] tfidf
     - [x] ctr    
-- [x] [SearchAds]()
+- [x] [AdsServer](./AdsServer)
     - without modeling
         - [x] Ad
         - [x] Utility

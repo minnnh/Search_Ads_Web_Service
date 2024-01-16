@@ -1,4 +1,4 @@
-# SearchAds
+# AdsServer
 
 ## Process
 - install jetty server  
