@@ -1,0 +1,117 @@
+<!-- <%@ page import="java.net.URLEncoder" %> -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- <title>Welcome to AdSearch</title> -->
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 20px auto; /* Center the form horizontally */
+            overflow: hidden; /* Clear float */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #searchForm {
+            margin: 20px auto;
+            padding: 20px;
+            text-align: left;
+            max-width: 600px; /* Adjusted for wider form */
+            width: 100%;
+            display: grid;
+            grid-template-columns: 2fr 2fr 1fr; /* Three columns - 2 fractions for left part, 1 fraction for right part */
+            gap: 16px; /* Adjust the gap between columns */
+        }
+
+        #leftPart {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            color: #333;
+            display: block;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        input {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 16px; /* Add margin between label and input */
+        }
+
+        #rightPart {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        input[type="submit"] {
+            background-color: #ebc934;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #eb9934;
+        }
+    </style>
+</head>
+
+
+
+<script>
+  function setFormAction() {
+    var form = document.getElementById('searchForm');
+    var query = document.getElementById('query').value;
+    var query_category = document.getElementById('query_category').value;
+    var device_id = document.getElementById('device_id').value;
+    var device_ip = document.getElementById('device_ip').value;
+    
+    
+    // Construct the URL with the query and device_id parameters
+    form.action = "/SearchAds?q=" + encodeURIComponent(query) 
+    				+ "&qclass=" + encodeURIComponent(query_category)
+    				+ "&did=" + encodeURIComponent(device_id)
+    				+ "&dip=" + encodeURIComponent(device_ip)
+    
+  }
+</script>
+
+<body>
+    <h1>Welcome to Ads Search</h1>
+    <form id="searchForm" method="get" action="#" onsubmit="setFormAction();">
+        <div id="leftPart">
+            <label for="query">Item Name:</label>
+            <input type="text" id="query" name="q" placeholder="Enter your item name">
+
+            <label for="query_category">Category:</label>
+            <input type="text" id="query_category" name="qclass" placeholder="Enter item category">
+
+            <label for="device_id">Device ID:</label>
+            <input type="text" id="device_id" name="did" placeholder="Enter device ID">
+
+            <label for="device_ip">Device IP:</label>
+            <input type="text" id="device_ip" name="dip" placeholder="Enter device IP">
+        </div>
+        <div id="rightPart">
+            <input type="submit" value="Search">
+        </div>
+    </form>
+    <!-- Your existing content goes here -->
+</body>
+</html>

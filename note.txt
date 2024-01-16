@@ -1,0 +1,15 @@
+memcachedPortal
+11212
+
+synonymsMemcachedPortal
+11219
+
+
+featureMemcachedPortal
+11218
+
+tfMemcachedPortal
+11220
+
+dfMemcachedPortal
+11221

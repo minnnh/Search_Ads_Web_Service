@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/amqp-client-4.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/jackson-annotations-2.8.3.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/jackson-core-2.8.3.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/jackson-databind-2.8.3.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/json-20160807.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/jsoup-1.10.1.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/log4j-api-2.7.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/log4j-core-2.7.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/lucene-analyzers-common-4.0.0.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/lucene-core-4.0.0.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/lucene-queryparser-4.0.0.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/slf4j-api-1.7.36.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/slf4j-simple-1.7.36.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/spymemcached-2.12.1.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/servlet-api-3.1.jar"/>
+	<classpathentry kind="lib" path="/Users/minhan/Projects/SearchAdsWebService/libs/mysql-connector-j-8.2.0/mysql-connector-j-8.2.0.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
